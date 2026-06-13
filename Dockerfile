@@ -13,6 +13,7 @@ RUN pip3 install -U pip
 COPY requirements.txt /requirements.txt
 
 # Installing Requirements
+RUN cd /
 RUN pip3 install -U -r requirements.txt
 RUN mkdir /EXTRACTOR
 WORKDIR /EXTRACTOR
