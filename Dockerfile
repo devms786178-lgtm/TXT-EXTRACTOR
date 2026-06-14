@@ -2,7 +2,7 @@ FROM python:3.12-slim
 
 # Install system packages
 RUN apt update && \
-    apt install -y git curl ffmpeg aria2 && \
+    apt install -y git curl ffmpeg aria2 gcc g++ && \
     apt clean
 
 # Set working directory
